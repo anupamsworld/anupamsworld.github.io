@@ -1,0 +1,61 @@
+<!--Advice: Works well with Firefox-->
+<br>
+<br>
+Server Link: <a target="_blank" href="https://pc8484-anupam.netork.top">https://pc8484-anupam.netork.top</a> _____ Status: <font id="1">Unknown</font>
+<br>
+Server Link: <a target="_blank" href="https://pc8089-anupam.netork.top">https://pc8089-anupam.netork.top</a> _____ Status: <font id="2">Unknown</font>
+<br>
+Server Link: <a target="_blank" href="https://pc8089-anupam.netork.top">https://ssh-iiests.netork.top</a> _____ Status: <font id="3">Unknown</font>
+<script>
+
+
+var xhttp1 = new XMLHttpRequest();
+xhttp1.onreadystatechange = function() {
+	let status1="\<font style=\"background\-color\:yellow\; color:black\;\" \>Unknown\<\/font\>";
+	if (this.readyState == 4 && this.status == 200) {
+		status1 = "\<font style=\"background\-color\:green\; color:white\;\" \>Live\<\/font\>";
+   }
+   else if(this.readyState == 4 && this.status == 200){
+		status1="Down";
+   }
+   document.getElementById("1").innerHTML = status1;
+};
+xhttp1.open("POST", "https://pc8484-anupam.netork.top", true);
+xhttp1.setRequestHeader('Cache-Control', 'no-cache');
+xhttp1.send();
+
+var xhttp2 = new XMLHttpRequest();
+xhttp2.onreadystatechange = function() {
+	let status2="\<font style=\"background\-color\:yellow\; color:black\;\" \>Unknown\<\/font\>";
+	if (this.readyState == 4 && this.status == 200) {
+		status2 = "\<font style=\"background\-color\:green\; color:white\;\" \>Live\<\/font\>";
+   }
+   else if(this.readyState == 4 && this.status == 200){
+		status2="Down";
+   }
+   document.getElementById("2").innerHTML = status2;
+};
+xhttp2.open("POST", "https://pc8089-anupam.netork.top", true);
+xhttp2.setRequestHeader('Cache-Control', 'no-cache');
+xhttp2.send();
+
+var xhttp3 = new XMLHttpRequest();
+xhttp3.onreadystatechange = function() {
+	let status3="\<font style=\"background\-color\:yellow\; color:black\;\" \>Unknown\<\/font\>";
+	if (this.readyState == 4 && this.status == 200) {
+		status3 = "\<font bgcolor=\"green\"\>Live\<\/font\>";
+   }
+   else if(this.readyState == 4 && this.status == 200){
+		status3="Down";
+   }
+   document.getElementById("3").innerHTML = status3;
+};
+xhttp3.open("POST", "https://ssh-iiests.netork.top", true);
+xhttp3.setRequestHeader('Cache-Control', 'no-cache');
+xhttp3.send();
+
+</script>
+<!--
+<div id="demo">
+</div>
+-->

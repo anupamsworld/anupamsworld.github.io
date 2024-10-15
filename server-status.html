@@ -3,7 +3,10 @@
 <p id="demo"></p>
 
 <script>
-function checkserver(ser, id){
+const ser = ["https://pc8484-anupam.netork.top" , "https://pc8089-anupam.netork.top" , "https://ssh-iiests.netork.top", "https://soumyasworld.netork.top"];
+let text = "";
+	
+function checkserver(id){
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 		let status="\<font style=\"background\-color\:yellow\; color:black\;\" \>Unknown\<\/font\>";
@@ -15,13 +18,11 @@ function checkserver(ser, id){
 		}
 		document.getElementById(id).innerHTML = status;
 	};
-	xhttp.open("GET", ser, true);
+	xhttp.open("GET", ser[id-1], true);
 	xhttp.setRequestHeader('Cache-Control', 'no-cache');
 	xhttp.send();
 }
 
-const ser = ["https://pc8484-anupam.netork.top" , "https://pc8089-anupam.netork.top" , "https://ssh-iiests.netork.top", "https://soumyasworld.netork.top"];
-let text = "";
 
 for (let i = 0; i < ser.length; i++) {
 	text += 'Server Link: <a target="_blank" href="'+ser[i]+'">'+ser[i]+'</a> _____ Status: <font id="'+(i+1)+'">Unknown</font><br>';
@@ -30,7 +31,7 @@ for (let i = 0; i < ser.length; i++) {
 document.getElementById("demo").innerHTML = text;
 
 for (let i = 0; i < ser.length; i++) {
-	checkserver(ser[i], i+1);
+	checkserver(i+1);
 }
 
 </script>

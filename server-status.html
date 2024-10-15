@@ -3,6 +3,23 @@
 <p id="demo"></p>
 
 <script>
+function checkserver(ser, id){
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		let status="\<font style=\"background\-color\:yellow\; color:black\;\" \>Unknown\<\/font\>";
+		if (this.readyState == 4 && this.status == 200) {
+			status = "\<font style=\"background\-color\:green\; color:white\;\" \>Live\<\/font\>";
+		}
+		else if(this.readyState == 4 && this.status == 502){
+			status="Down";
+		}
+		document.getElementById(id).innerHTML = status;
+	};
+	xhttp.open("POST", ser, true);
+	xhttp.setRequestHeader('Cache-Control', 'no-cache');
+	xhttp.send();
+}
+
 const ser = ["https://pc8484-anupam.netork.top" , "https://pc8089-anupam.netork.top" , "https://ssh-iiests.netork.top", "https://soumyasworld.netork.top"];
 let text = "";
 
@@ -12,27 +29,8 @@ for (let i = 0; i < ser.length; i++) {
 
 document.getElementById("demo").innerHTML = text;
 
-
-function checkserver(ser, id){
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-	let status="\<font style=\"background\-color\:yellow\; color:black\;\" \>Unknown\<\/font\>";
-	if (this.readyState == 4 && this.status == 200) {
-		status = "\<font style=\"background\-color\:green\; color:white\;\" \>Live\<\/font\>";
-   	}
-	else if(this.readyState == 4 && this.status == 502){
-		status="Down";
-	}
-	document.getElementById(id).innerHTML = status;
-};
-xhttp.open("POST", ser, true);
-xhttp.setRequestHeader('Cache-Control', 'no-cache');
-xhttp.send();
-}
-
 for (let i = 0; i < ser.length; i++) {
 	checkserver(ser[i], i+1);
 }
-
 
 </script>

@@ -15,7 +15,7 @@ function checkserver(ser, id){
 		}
 		document.getElementById(id).innerHTML = status;
 	};
-	xhttp.open("POST", ser, true);
+	xhttp.open("GET", ser, true);
 	xhttp.setRequestHeader('Cache-Control', 'no-cache');
 	xhttp.send();
 }

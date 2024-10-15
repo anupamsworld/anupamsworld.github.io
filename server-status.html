@@ -7,8 +7,7 @@ const ser = ["https://pc8484-anupam.netork.top" , "https://pc8089-anupam.netork.
 let text = "";
 
 for (let i = 0; i < ser.length; i++) {
- 
-    text += 'Server Link: <a target="_blank" href="'+ser[i]+'">'+ser[i]+'</a> _____ Status: <font id="'+(i+1)+'">Unknown</font><br>';
+	text += 'Server Link: <a target="_blank" href="'+ser[i]+'">'+ser[i]+'</a> _____ Status: <font id="'+(i+1)+'">Unknown</font><br>';
 }
 
 document.getElementById("demo").innerHTML = text;
@@ -20,11 +19,11 @@ xhttp.onreadystatechange = function() {
 	let status="\<font style=\"background\-color\:yellow\; color:black\;\" \>Unknown\<\/font\>";
 	if (this.readyState == 4 && this.status == 200) {
 		status = "\<font style=\"background\-color\:green\; color:white\;\" \>Live\<\/font\>";
-   }
-   else if(this.readyState == 4 && this.status == 200){
+   	}
+	else if(this.readyState == 4 && this.status == 502){
 		status="Down";
-   }
-   document.getElementById(id).innerHTML = status;
+	}
+	document.getElementById(id).innerHTML = status;
 };
 xhttp.open("POST", ser, true);
 xhttp.setRequestHeader('Cache-Control', 'no-cache');
@@ -32,7 +31,7 @@ xhttp.send();
 }
 
 for (let i = 0; i < ser.length; i++) {
-    checkserver(ser[i], i+1);
+	checkserver(ser[i], i+1);
 }
 
 

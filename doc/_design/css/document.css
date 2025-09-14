@@ -1,9 +1,9 @@
 @font-face{
 	font-family:'mainFont';
 	src:
-	url("/doc/.design/font/Berlin_Sans_FB_Regular.woff") format('woff'),
-	url("/doc/.design/font/Berlin_Sans_FB_Regular.ttf") format('truetype'),
-	url("/doc/.design/font/Berlin_Sans_FB_Regular.otf") format('opentype');
+	url("/doc/_design/font/Berlin_Sans_FB_Regular.woff") format('woff'),
+	url("/doc/_design/font/Berlin_Sans_FB_Regular.ttf") format('truetype'),
+	url("/doc/_design/font/Berlin_Sans_FB_Regular.otf") format('opentype');
 }
 
 div.topicName{

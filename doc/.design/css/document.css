@@ -1,0 +1,74 @@
+@font-face{
+	font-family:'mainFont';
+	src:
+	url("/doc/.design/font/Berlin_Sans_FB_Regular.woff") format('woff'),
+	url("/doc/.design/font/Berlin_Sans_FB_Regular.ttf") format('truetype'),
+	url("/doc/.design/font/Berlin_Sans_FB_Regular.otf") format('opentype');
+}
+
+div.topicName{
+	width:100%;
+	background-color:black ;
+	color:white;
+	font-size:20px ;
+}
+
+font.topicName{
+	margin:auto;
+	background-color:black ;
+	color:white;
+	font-size:20px ;
+}
+font.point{}
+font.subPoint{}
+font.fieldsetHeading{
+	background-color:white;
+	color:black;
+	font-family:mainFont;
+	font-size:20px;
+}
+font.text{
+	font-family:mainFont;
+	font-size:18px;
+	color:white;
+}
+font.basicClearFont{
+	font-family:basicClearFont;
+	font-size:18px;
+	color:white;
+}
+fieldset.alt1{
+	background-color:#445570;
+}
+fieldset.alt2{
+	background-color:#444854;
+}
+
+.red_white_responsive{
+    background-color:red ;
+    color:white ;
+    font-family:mainFont;
+    border-radius:6px;
+    box-shadow:0px 0px 10px 2px black ;
+}
+.red_white_responsive:hover{
+    background-color:white ;
+    color:red ;
+    font-family:mainFont;
+    border-radius:6px;
+    cursor:pointer;
+}
+.green_white_responsive{
+    background-color:green ;
+    color:white ;
+    font-family:mainFont;
+    border-radius:6px;
+    box-shadow:0px 0px 10px 2px black ;
+}
+.green_white_responsive:hover{
+    background-color:white ;
+    color:green ;
+    font-family:mainFont;
+    border-radius:6px;
+    cursor:pointer;
+}

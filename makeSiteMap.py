@@ -37,8 +37,9 @@ def render_tree(node, prefix=""):
     for name, child in sorted(node.items()):
         if child is None:
             # It's a file
-            path = os.path.join(prefix, name).replace("\\", "/")
-            html += f"<li><a href='{path}' target='_blank'>{name}</a></li>\n"
+            if name.lower()=="index.html":
+                path = os.path.join(prefix, name).replace("\\", "/")
+                html += f"<li><a href='{path}' target='_blank'>{name}</a></li>\n"
         else:
             # It's a folder
             sub_prefix = os.path.join(prefix, name)
@@ -56,12 +57,13 @@ def generate_sitemap(root_dir, output_file="sitemap.html"):
         f.write("<meta charset='UTF-8'>\n<title>Sitemap</title>\n")
         f.write("<style>body{font-family:Arial;} ul{list-style:none;}</style>\n")
         f.write("</head>\n<body>\n")
-        f.write("<h1>Sitemap</h1>\n<ul>\n")
-        f.write(render_tree(tree, prefix="/doc/"))
+        f.write("<h1>Sitemap</h1>\n")
+        f.write("<h2>Click the topics to unfold/fold them</h2>\n<ul>\n")
+        f.write(render_tree(tree, prefix=root_dir))
         f.write("</ul>\n</body>\n</html>\n")
 
     print(f"Sitemap generated: {output_file}")
 
 # Example usage
 if __name__ == "__main__":
-    generate_sitemap(root_dir="./doc/")  # Change '.' to the target directory
+    generate_sitemap(root_dir="./")  # Change '.' to the target directory

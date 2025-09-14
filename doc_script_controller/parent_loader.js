@@ -6,5 +6,5 @@ function loadCSS(url) {
 }
 
 function load_all(){
-    loadCSS("/doc/.design/css/document.css");
+    loadCSS("/doc/_design/css/document.css");
 }

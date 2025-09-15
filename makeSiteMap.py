@@ -43,7 +43,7 @@ def render_tree(node, prefix=""):
         else:
             # It's a folder
             sub_prefix = os.path.join(prefix, name)
-            html += f"<li><details><summary>{name}</summary>\n<ul>\n"
+            html += f"<li><details><summary style=\"cursor: pointer;\">{name}</summary>\n<ul>\n"
             html += render_tree(child, sub_prefix)
             html += "</ul></details></li>\n"
     return html
@@ -58,7 +58,7 @@ def generate_sitemap(root_dir, output_file="sitemap.html"):
         f.write("<style>body{font-family:Arial;} ul{list-style:none;}</style>\n")
         f.write("</head>\n<body>\n")
         f.write("<h1>Sitemap</h1>\n")
-        f.write("<h2>Click the topics to unfold/fold them</h2>\n<ul>\n")
+        f.write("<h2>Click the topics/directory names to unfold/fold them</h2>\n<ul>\n")
         f.write(render_tree(tree, prefix=root_dir))
         f.write("</ul>\n</body>\n</html>\n")
 

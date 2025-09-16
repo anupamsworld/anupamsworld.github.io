@@ -1,0 +1,34 @@
+<script>
+function loadJS(url, callback) {
+    let script = document.createElement("script");
+    script.src = url;
+    script.type = "text/javascript";
+    script.onload = callback; // Run after script loads
+    document.head.appendChild(script);
+	
+}
+loadJS("/doc_script_controller/parent_loader.js", function() { load_all();});
+</script>
+
+<head>
+<title>High Level VS Low Level language</title>
+
+<style>
+	
+	body{
+		font-family:mainFont;
+	}
+	
+</style>
+</head>
+<h1>High Level VS Low Level language</h1>
+	<fieldset>
+		<legend>
+			<span class="fieldsetHeading">
+				What is meant by High Level and Low Level language 
+			</span>
+		</legend>
+		<span class="text">Q
+			In a lay man's term, high level language is closer to human read and human use. Meaning easy to understand, easy to use, less to write.
+		</span>
+	</fieldset>

@@ -1,4 +1,4 @@
-
+/*
 @font-face{
 	font-family:'mainFont';
 	src:
@@ -6,19 +6,39 @@
 	url("/doc/design/font/Berlin_Sans_FB_Regular.ttf") format('truetype'),
 	url("/doc/design/font/Berlin_Sans_FB_Regular.otf") format('opentype');
 }
+*/
+/*
+@font-face{
+	font-family:'mainFont';
+	src:
+	url("/doc/design/font/Computer Modern Serif/Serif/cmunrm.ttf") format('truetype'),
+}
+	*/
+	/*
+@font-face{
+	font-family:'mainFont';
+	src:
+	url("/doc/design/font/Montserrat/static/Montserrat-Regular.ttf") format('truetype'),
+}
+	*/
+@font-face{
+	font-family:'mainFont';
+	src:
+	url("/doc/design/font/Open_Sans/static/OpenSans-Regular.ttf") format('truetype'),
+}
 
 div.topicName{
 	width:100%;
 	background-color:black ;
 	color:white;
-	font-size:20px ;
+	font-size:18px ;
 }
 
 font.topicName{
 	margin:auto;
 	background-color:black ;
 	color:white;
-	font-size:20px ;
+	font-size:18px ;
 }
 font.point{}
 font.subPoint{}
@@ -26,18 +46,34 @@ font.fieldsetHeading{
 	background-color:white;
 	color:black;
 	font-family:mainFont;
-	font-size:20px;
+	font-size:18px;
 }
 font.text{
 	font-family:mainFont;
-	font-size:18px;
+	font-size:16px;
 	color:white;
 }
 font.basicClearFont{
 	font-family:basicClearFont;
-	font-size:18px;
+	font-size:16px;
 	color:white;
 }
+span.fieldsetHeading{
+	background-color:white;
+	color:black;
+	font-family:mainFont;
+	font-size:18px;
+}
+span.text{
+	font-family:mainFont;
+	font-size:16px;
+}
+span.textWhite{
+	font-family:mainFont;
+	font-size:16px;
+	color:white;
+}
+
 fieldset.alt1{
 	background-color:#445570;
 }

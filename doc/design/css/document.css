@@ -62,15 +62,19 @@ span.fieldsetHeading{
 	background-color:white;
 	color:black;
 	font-family:mainFont;
-	font-size:18px;
+	font-size:16px;
 }
 span.text{
+	font-family:mainFont;
+	font-size:14px;
+}
+span.textHeading{
 	font-family:mainFont;
 	font-size:16px;
 }
 span.textWhite{
 	font-family:mainFont;
-	font-size:16px;
+	font-size:14px;
 	color:white;
 }
 

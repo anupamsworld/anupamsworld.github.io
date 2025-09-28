@@ -1,0 +1,13 @@
+<script>
+function loadJS(url, callback) {
+    let script = document.createElement("script");
+    script.src = url;
+    script.type = "text/javascript";
+    script.onload = callback; // Run after script loads
+    document.head.appendChild(script);
+	
+}
+loadJS("/doc_script_controller/parent_loader.js", function() { load_all();});
+</script>
+
+Troubleshooting & Bug Fix

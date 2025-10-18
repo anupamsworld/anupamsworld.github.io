@@ -1,0 +1,15 @@
+<script>
+function loadJS(url, callback) {
+    let script = document.createElement("script");
+    script.src = url;
+    script.type = "text/javascript";
+    script.onload = callback; // Run after script loads
+    document.head.appendChild(script);
+	
+}
+loadJS("/doc_script_controller/parent_loader.js", function() { load_all();});
+</script>
+<span class="textHeading">Why documenting</span><br><br>
+<span class="text"> First of all, welcome! And congratulations as you have landed here which is not some common documention page that we see in any official documentation site. This is a type of documentation that is based on the things I have leaned and the experiences I have gained through solving problems while doing hands-on work.
+
+</span>

@@ -9,19 +9,67 @@ function loadJS(url, callback) {
 }
 loadJS("/doc_script_controller/parent_loader.js", function() { load_all();});
 </script>
-
 <head>
+    <meta charset="UTF-8">
 <title>High Level VS Low Level language</title>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
 <style>
 	
 	body{
 		font-family:mainFont;
 	}
-	
+	.tiro-devanagari-hindi-regular {
+        font-family: "Tiro Devanagari Hindi", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .tiro-devanagari-hindi-regular-italic {
+        font-family: "Tiro Devanagari Hindi", serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+
 </style>
 </head>
-<h1>High Level VS Low Level language</h1>
-<span class="textHeading"><b>What is meant by High Level and Low Level language?</b></h2><br>
-<span class="text">In a lay man's term, high level language is closer to human read and human use. Meaning easy to understand, easy to use, less to write.</span>
-<br>
+<body>
+    
+    <h1>
+        High Level VS Low Level language
+    </h1>
+    <span class="textHeading">
+        <b>
+            What is meant by High Level and Low Level language?
+        </b>
+    </span>
+    <br>
+    <span class="text">
+        In a lay man's term, high level language is closer to human read and human use. Meaning easy to understand, easy to use, less to write.
+        <br><br>
+        In programming, high level languages like Python, Java, C# are designed to be easy for humans to read and write. They abstract away many of the complex details of the computer's hardware, allowing programmers to focus on solving problems rather than dealing with low-level operations.
+        On the other hand, low level languages like Assembly and Machine code are much closer to the computer's hardware. They require a deep understanding of the computer's architecture and are more difficult to read and write. However, they offer more control over the hardware and can be more efficient in terms of performance.
+
+    </span>
+    <br><br>
+    <span class="textHeading">
+        <b>
+            Examples make it easier to understand:
+        </b>
+    </span>
+    <br>
+    <span class="text">
+        Lets understand this with an example. Consider you want to tell someone to make a cup of tea. If you tell them in a high level way, you would say something like "Make me a cup of tea". This is easy to understand and easy to say. But if you were to explain the same thing in a low level way, you would have to explain every single step involved in making a cup of tea, like "Boil water, take a cup, put tea leaves in the cup, pour boiled water into the cup, add sugar and milk, stir well". This is more detailed and takes more time to explain.
+        <br><br>
+        Lets try to understand the same in terms of number system. The decimal number system (base 10) is a high level way of representing numbers that is easy for humans to understand and use. We use digits from 0 to 9 to represent numbers, and each position in a number represents a power of 10. For example, the number 5 in decimal is represented as 5, which is equal to (5 * 10<sup>0</sup>). Similarly, the number 123 in decimal is represented as 123, which is equal to (1 * 10<sup>2</sup>) + (2 * 10<sup>1</sup>) + (3 * 10<sup>0</sup>).
+        But the binary number system (base 2) is a low level way of representing numbers that is closer to how computers understand and process data. In binary, we use only two digits, 0 and 1, to represent numbers, and each position in a number represents a power of 2. For example, the number 123 in binary is represented as 1111011, which is equal to (1 * 2<sup>6</sup>) + (1 * 2<sup>5</sup>) + (1 * 2<sup>4</sup>) + (1 * 2<sup>3</sup>) + (0 * 2<sup>2</sup>) + (1 * 2<sup>1</sup>) + (1 * 2<sup>0</sup>) and 5 in binary is represented as 101, which is equal to (1 * 2<sup>2</sup>) + (0 * 2<sup>1</sup>) + (1 * 2<sup>0</sup>).
+        <br><br>
+        You see, same number 5 in decimal takes only one digit to represent, but in binary it takes three digits to represent. This shows how high level representation is more compact and easier to use, while low level representation is more detailed and space-consuming.
+        <br><br>
+        These are happening because the number of elements in the alaphabet of the number system is different. Decimal has 10 elements (0-9) while binary has only 2 elements (0 and 1). Hence, to represent the same value, binary needs more digits compared to decimal.
+        <br><br>
+        More example. If you are familiarised with "Hindi" lanhuage lets take one letter <span class="tiro-devanagari-hindi-regular">"ख"</span>. To represent this letter in English, we need to use two letters "k" and "h" together as "kh". Here, Hindi is high level language and English is low level language for this particular letter representation. This is because Hindi has a larger alphabet set that can represent more sounds with single letters, while English has a smaller alphabet set that requires combining multiple letters to represent certain sounds.
+    </span>
+    
+</body>

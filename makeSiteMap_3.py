@@ -62,7 +62,7 @@ def generate_sitemap(root_dir, output_file="sitemap.html"):
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("<!DOCTYPE html>\n<html>\n<head>\n")
-        f.write("<meta charset='UTF-8'>\n<title>Sitemap</title>\n")
+        f.write("<meta charset='UTF-8'>\n<title>Sitemap</title>\n<meta name='viewport' content='width=device-width, initial-scale=1.0' />")
 
         # ⭐ ONLY THIS STYLE BLOCK UPDATED ⭐
         f.write("""

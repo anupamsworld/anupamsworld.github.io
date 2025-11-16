@@ -50,10 +50,13 @@ li a:hover {
 }
 
 /* Folder icons */
-details summary::before {
+/* Closed folder */
+details:not([open]) > summary::before {
     content: "📁 ";
 }
-details[open] summary::before {
+
+/* Open folder */
+details[open] > summary::before {
     content: "📂 ";
 }
 

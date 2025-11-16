@@ -3,43 +3,105 @@
 <head>
 <meta charset='UTF-8'>
 <title>Sitemap</title>
-<style>body{font-family:Arial;} ul{list-style:none;}</style>
+
+<style>
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+/* Tree styling */
+ul {
+    list-style-type: none;
+    margin-left: 15px;
+    padding-left: 12px;
+    border-left: 2px solid #e0e0e0;
+}
+
+/* Folder label */
+details > summary {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 4px 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+/* Hover folder */
+details > summary:hover {
+    background: #f0f4ff;
+}
+
+/* File links */
+li a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 4px 6px;
+    display: inline-block;
+    border-radius: 6px;
+    transition: background 0.2s ease, padding-left 0.2s;
+}
+
+/* Hover file */
+li a:hover {
+    background: #e9f0ff;
+    padding-left: 10px;
+}
+
+/* Folder icons */
+details summary::before {
+    content: "📁 ";
+}
+details[open] summary::before {
+    content: "📂 ";
+}
+
+/* File icon */
+li a::before {
+    content: "📄 ";
+}
+</style>
 </head>
 <body>
 <h1>Sitemap</h1>
 <h2>Click the topics/directory names to unfold/fold them</h2>
 <ul>
 <li><a href='index.html' target='_blank'>index.html</a></li>
-<li><details><summary style="cursor: pointer;">doc</summary>
+<li><details><summary>doc</summary>
 <ul>
 <li><a href='doc/index.html' target='_blank'>index.html</a></li>
-<li><details><summary style="cursor: pointer;">computer_network</summary>
+<li><details><summary>computer_network</summary>
 <ul>
 <li><a href='doc/computer_network/index.html' target='_blank'>index.html</a></li>
-<li><details><summary style="cursor: pointer;">general</summary>
+<li><details><summary>general</summary>
 <ul>
-<li><details><summary style="cursor: pointer;">signals_and_their_representations</summary>
+<li><details><summary>signals_and_their_representations</summary>
 <ul>
 <li><a href='doc/computer_network/general/signals_and_their_representations/index.html' target='_blank'>index.html</a></li>
 </ul></details></li>
 </ul></details></li>
 </ul></details></li>
-<li><details><summary style="cursor: pointer;">programming</summary>
+<li><details><summary>programming</summary>
 <ul>
-<li><details><summary style="cursor: pointer;">C</summary>
+<li><details><summary>C</summary>
 <ul>
 <li><a href='doc/programming/C/index.html' target='_blank'>index.html</a></li>
+<li><details><summary>interesting_questions</summary>
+<ul>
+<li><a href='doc/programming/C/interesting_questions/index.html' target='_blank'>index.html</a></li>
 </ul></details></li>
-<li><details><summary style="cursor: pointer;">general</summary>
+</ul></details></li>
+<li><details><summary>general</summary>
 <ul>
 <li><a href='doc/programming/general/index.html' target='_blank'>index.html</a></li>
-<li><details><summary style="cursor: pointer;">high_level-vs-low_level</summary>
+<li><details><summary>high_level-vs-low_level</summary>
 <ul>
 <li><a href='doc/programming/general/high_level-vs-low_level/index.html' target='_blank'>index.html</a></li>
 </ul></details></li>
 </ul></details></li>
 </ul></details></li>
-<li><details><summary style="cursor: pointer;">troubleshooting-bug_fix</summary>
+<li><details><summary>troubleshooting-bug_fix</summary>
 <ul>
 <li><a href='doc/troubleshooting-bug_fix/index.html' target='_blank'>index.html</a></li>
 </ul></details></li>

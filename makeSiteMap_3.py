@@ -68,6 +68,7 @@ def generate_sitemap(root_dir, output_file="sitemap.html"):
         f.write("""
 <style>
 body {
+    background: linear-gradient(135deg, #bad6f9, #bbf8e5);
     font-family: Arial;
     padding: 20px;
 }
